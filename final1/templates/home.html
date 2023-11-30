@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/global.css" />
+    <link rel="stylesheet" href="/static/home.css" />
+    <link rel="stylesheet" href="/static/style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Arial:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap"
+    />
+  </head>
+  <body class="fadeInDown">
+    <h1>Welcome, {{ username }}!</h1>
+    <script>
+        alert('Login successful. Welcome, {{ username }}!');
+    </script>
+    <div class="home">
+      <div class="top-header2">
+        <div class="all-top2"></div>
+        <div class="mid-right-top2">
+          <div class="mid-right-top-inner"></div>
+          <div class="leader-button2">
+            <div class="leader-button-inner"></div>
+            <a href="#xep-hang"><div class="xp-hng2">Xếp Hạng</div></a>
+          </div>
+          <div class="type-button2">
+            <div class="leader-button-inner"></div>
+            <a href="#the-loai"><div class="xp-hng2">Thể Loại</div></a>
+          </div>
+          <div class="home-button2">
+            <div class="leader-button-inner"></div>
+            <a href="{{ url_for('home') }}"><div class="trang-ch2">Trang Chủ</div></a>
+          </div>
+          <div class="searchbar-input2">
+            <div class="searchbar-input-inner"></div>
+            <img class="vector-icon9" alt="" src="/static/vector9.svg" />
+
+            <a href="{{ url_for('search') }}"><div class="bn-mun-tm2">Bạn muốn tìm truyện gì</div></a>
+          </div>
+          <div class="sign-up-button2">
+            <div class="leader-button-inner"></div>
+            <a href="{{ url_for('login') }}"><div class="ng-nhp2">Đăng Nhập</div></a>
+          </div>
+          <div class="register-button2">
+            <div class="leader-button-inner"></div>
+            <a href="{{ url_for('signup') }}"><div class="ng-k2">Đăng ký</div></a>
+          </div>
+        </div>
+        <a href="introduction.html">
+          <div class="left-top3">
+          <div class="logo4">
+            <img class="logo-child1" alt="" src="/static/rectangle-1@2x.png" />
+          </div>
+          <div class="comicbook4">
+            <span class="comicbook-txt4">
+              <span>Comic</span>
+              <span class="book4">Book</span>
+            </span>
+          </div>
+        </div></a>
+      </div>
+      <div class="top-slider">
+        <div class="top-slider-child"></div>
+        <div class="slide-main">
+          <img class="vlp-m-icon" alt="" src="/static/vlp-m@2x.png" />
+
+          <img
+            class="v-luyn-nh-phong"
+            alt=""
+            src="/static/v-luyn-nh-phong@2x.png"
+          />
+
+          <div class="group-parent">
+            <div class="vector-parent">
+              <img class="vector-icon10" alt="" src="/static/vector10.svg" />
+
+              <div class="v-luyn-nh">Võ Luyện Đỉnh Phong</div>
+            </div>
+            <div class="rectangle-parent">
+              <div class="group-child"></div>
+              <div class="ang-xut-bn">Đang xuất bản</div>
+            </div>
+            <div class="rectangle-group">
+              <div class="group-item"></div>
+              <div class="chng-3435">Chương 3435</div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-top-right">
+          <img class="tvt-m-icon" alt="" src="/static/tvt-m@2x.png" />
+
+          <img class="tin-v-tn" alt="" src="/static/tin-v--tn@2x.png" />
+
+          <div class="group-container">
+            <div class="rectangle-container">
+              <div class="group-inner"></div>
+              <div class="chng-279">Chương 279</div>
+            </div>
+            <div class="vector-group">
+              <img class="vector-icon11" alt="" src="/static/vector11.svg" />
+
+              <div class="tin-v">Tiên Võ Đế Tôn</div>
+            </div>
+            <div class="group-div">
+              <div class="rectangle-div"></div>
+              <div class="ang-xut-bn1">Đang xuất bản</div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-bottom-right">
+          <img class="tvt-m-icon" alt="" src="/static/nt-m@2x.png" />
+
+          <img class="tin-v-tn" alt="" src="/static/nguyn-tn@2x.png" />
+
+          <div class="group-parent1">
+            <div class="vector-container">
+              <img class="vector-icon12" alt="" src="/static/vector11.svg" />
+
+              <div class="nguyn-tn">Nguyên Tôn</div>
+            </div>
+            <div class="rectangle-parent1">
+              <div class="rectangle-div"></div>
+              <div class="ang-xut-bn1">Đang xuất bản</div>
+            </div>
+            <div class="rectangle-parent2">
+              <div class="group-inner"></div>
+              <div class="chng-279">Chương 668</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-c">
+        <div class="main-c-child"></div>
+        <div class="left1">
+          <div class="left-child"></div>
+          <img class="left-item" alt="" src="/static/rectangle-40@2x.png" />
+
+          <div class="text">
+            <div class="button">
+              <div class="button-child"></div>
+              <div class="xem-thm">Xem Thêm</div>
+            </div>
+            <div class="chng-381">Chương 381</div>
+            <div class="th-chi-nghch">Đô Thị Chi Nghịch Thiên Tiên Tôn</div>
+          </div>
+        </div>
+        <div class="left2">
+          <div class="left-inner"></div>
+          <img class="left-child1" alt="" src="/static/rectangle-401@2x.png" />
+
+          <div class="text1">
+            <div class="button1">
+              <div class="button-child"></div>
+              <div class="xem-thm">Xem Thêm</div>
+            </div>
+            <div class="chng-215">Chương 1</div>
+            <div class="nht-kim-c">
+              <a href="{{ url_for('comic') }}">Kiếm nghịch thương khung</a></div>
+          </div>
+        </div>
+        <div class="left3">
+          <div class="left-inner"></div>
+          <img class="left-child1" alt="" src="/static/rectangle-402@2x.png" />
+
+          <div class="text1">
+            <div class="button2">
+              <div class="button-inner"></div>
+              <div class="xem-thm2">Xem Thêm</div>
+            </div>
+            <div class="chng-229">Chương 229</div>
+            <div class="ta-khng-mun">Ta Không Muốn Trùng Sinh Đâu</div>
+          </div>
+        </div>
+        <div class="left4">
+          <div class="left-child"></div>
+          <img class="left-item" alt="" src="/static/rectangle-403@2x.png" />
+
+          <div class="text">
+            <div class="button3">
+              <div class="button-child"></div>
+              <div class="xem-thm">Xem Thêm</div>
+            </div>
+            <div class="chng-417">Chương 417</div>
+            <div class="th-chi-nghch">Đại Quản Gia Là Ma Hoàng</div>
+          </div>
+        </div>
+        <div class="truyn-c">Truyện Đề Cử</div>
+      </div>
+      <div class="main-new-update">
+        <div class="main-new-update-child"></div>
+        <div class="top">
+          <div class="left5">
+            <div class="left-child6"></div>
+            <img
+              class="left-child7"
+              alt=""
+              src="/static/rectangle-404@2x.png"
+            />
+
+            <div class="text4">
+              <div class="v-luyn-nh1">Võ Luyện Đỉnh Phong</div>
+            </div>
+          </div>
+          <div class="left6">
+            <div class="left-child8"></div>
+            <img
+              class="left-child9"
+              alt=""
+              src="/static/rectangle-405@2x.png"
+            />
+
+            <div class="text5">
+              <div class="nht-kim-c1"><a href="{{ url_for('comic') }}">Kiếm Nghịch Thương Khung</a></div>
+            </div>
+          </div>
+          <div class="left7">
+            <div class="left-child10"></div>
+            <img
+              class="left-child11"
+              alt=""
+              src="/static/rectangle-406@2x.png"
+            />
+
+            <div class="text6">
+              <div class="vn-c-thn">Vạn Cổ Thần Vương</div>
+            </div>
+          </div>
+          <div class="left8">
+            <div class="left-child12"></div>
+            <img
+              class="left-child13"
+              alt=""
+              src="/static/rectangle-407@2x.png"
+            />
+
+            <div class="text7">
+              <div class="tu-la-kim">Nguyên Tôn</div>
+            </div>
+          </div>
+          <div class="left9">
+            <div class="left-child12"></div>
+            <img
+              class="left-child13"
+              alt=""
+              src="/static/rectangle-408@2x.png"
+            />
+
+            <div class="text7">
+              <div class="tu-la-kim">Đại Quản Gia Là Ma Hoàng</div>
+            </div>
+          </div>
+          <div class="left10">
+            <div class="left-child12"></div>
+            <img
+              class="left-child13"
+              alt=""
+              src="/static/rectangle-409@2x.png"
+            />
+
+            <div class="text7">
+              <div class="tu-la-kim">Tu La Kiếm Tôn</div>
+            </div>
+          </div>
+        </div>
+        <div class="mid1">
+          <div class="left11">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4010@2x.png"
+            />
+
+            <div class="text10">
+              <div class="tuyt-th-v">Tuyệt Thế Võ Thần</div>
+            </div>
+          </div>
+          <div class="left12">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4011@2x.png"
+            />
+
+            <div class="text10">
+              <div class="tuyt-th-v">Ta Là Tà Đế</div>
+            </div>
+          </div>
+          <div class="left13">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4012@2x.png"
+            />
+
+            <div class="text10">
+              <div class="tuyt-th-v">Lạn Kha Kỳ Duyên</div>
+            </div>
+          </div>
+          <div class="left14">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4013@2x.png"
+            />
+
+            <div class="text10">
+              <div class="tuyt-th-v">Chàng Rể Mạnh Nhất Lịch Sử</div>
+            </div>
+          </div>
+          <div class="left15">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4014@2x.png"
+            />
+
+            <div class="text10">
+              <div class="in-thoi-ca-container">
+                <span class="comicbook-txt4">
+                  <p class="in-thoi-ca">Điện Thoại Của Ta</p>
+                  <p class="in-thoi-ca">Thông Tam Giới</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="left16">
+            <div class="left-child18"></div>
+            <img
+              class="left-child19"
+              alt=""
+              src="/static/rectangle-4015@2x.png"
+            />
+
+            <div class="text10">
+              <div class="tuyt-th-v">Vạn Cổ Tối Cường Tông</div>
+            </div>
+          </div>
+        </div>
+        <div class="under">
+          <div class="left17">
+            <div class="left-child30"></div>
+            <img
+              class="left-child31"
+              alt=""
+              src="/static/rectangle-4016@2x.png"
+            />
+
+            <div class="text16">
+              <div class="tin-v1">Tiên Võ Đế Tôn</div>
+            </div>
+          </div>
+          <div class="left18">
+            <div class="left-child32"></div>
+            <img
+              class="left-child33"
+              alt=""
+              src="/static/rectangle-4017@2x.png"
+            />
+
+            <div class="text17">
+              <div class="bch-luyn-thnh">Bách Luyện Thành Thần</div>
+            </div>
+          </div>
+          <div class="left19">
+            <div class="left-child34"></div>
+            <img
+              class="left-child35"
+              alt=""
+              src="/static/rectangle-4018@2x.png"
+            />
+
+            <div class="text18">
+              <div class="v-o-c">Võ Đạo Độc Tôn</div>
+            </div>
+          </div>
+          <div class="left20">
+            <div class="left-child32"></div>
+            <img
+              class="left-child33"
+              alt=""
+              src="/static/rectangle-4019@2x.png"
+            />
+
+            <div class="text17">
+              <div class="thp-i-container">
+                <span class="comicbook-txt4">
+                  <p class="in-thoi-ca">Thập Đại Đế Hoàng Đều Là</p>
+                  <p class="in-thoi-ca">Đệ Tử Của Ta</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="left21">
+            <div class="left-child32"></div>
+            <img
+              class="left-child33"
+              alt=""
+              src="/static/rectangle-4020@2x.png"
+            />
+
+            <div class="text17">
+              <div class="thp-i-container">
+                <span class="comicbook-txt4">
+                  <p class="in-thoi-ca">Ta Trời Sinh Đã Là</p>
+                  <p class="in-thoi-ca">Nhân Vật Phản Diện</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="left22">
+            <div class="left-child32"></div>
+            <img
+              class="left-child33"
+              alt=""
+              src="/static/rectangle-4021@2x.png"
+            />
+
+            <div class="text17">
+              <div class="bch-luyn-thnh">Oshi no Ko</div>
+            </div>
+          </div>
+        </div>
+        <div id="truyen-moi-cap-nhat" class="truyn-mi-cp">Truyện Mới Cập Nhật</div>
+      </div>
+      <a href="introduction.html">
+      </a>
+      <div class="toptype">
+        <div class="toptype-child"></div>
+        <div class="top-type">
+          <div class="top-type-child"></div>
+          <div id="the-loai" class="top-th-loi">Top Thể Loại Truyện</div>
+          <div class="group-parent2">
+            <div class="rectangle-parent3">
+              <div class="group-child3"></div>
+              <div class="action">Action</div>
+            </div>
+            <div class="rectangle-parent4">
+              <div class="group-child4"></div>
+              <div class="trng-sinh">Trọng Sinh</div>
+            </div>
+            <div class="rectangle-parent5">
+              <div class="group-child3"></div>
+              <div class="action">Tu Tiên</div>
+            </div>
+            <div class="rectangle-parent6">
+              <div class="group-child6"></div>
+              <div class="romance">Romance</div>
+            </div>
+            <div class="rectangle-parent7">
+              <div class="group-child3"></div>
+              <div class="action">Hiện Đại</div>
+            </div>
+            <div class="rectangle-parent8">
+              <div class="group-child3"></div>
+              <div class="chuyn-sinh">Chuyển Sinh</div>
+            </div>
+            <div class="rectangle-parent9">
+              <div class="group-child3"></div>
+              <div class="adventure">Adventure</div>
+            </div>
+            <div class="rectangle-parent10">
+              <div class="group-child3"></div>
+              <div class="action">Anime</div>
+            </div>
+            <div class="rectangle-parent11">
+              <div class="group-child3"></div>
+              <div class="romance">Detective</div>
+            </div>
+            <div class="rectangle-parent12">
+              <div class="group-child3"></div>
+              <div class="action">Fantasy</div>
+            </div>
+            <div class="rectangle-parent13">
+              <div class="group-child3"></div>
+              <div class="action">Isekai</div>
+            </div>
+            <div class="rectangle-parent14">
+              <div class="group-child3"></div>
+              <div class="action">School</div>
+            </div>
+          </div>
+        </div>
+        <div class="top-bxh">
+          <div class="top-bxh-child"></div>
+          <div id="xep-hang" class="top-truyn">Top Truyện</div>
+          <div class="home1">
+            <div class="home-child"></div>
+            <div class="top-thng">Top Tháng</div>
+          </div>
+          <div class="home2">
+            <div class="home-item"></div>
+            <div class="yu-thch">Yêu Thích</div>
+          </div>
+          <div class="home3">
+            <div class="home-inner"></div>
+            <div class="top-nm">Top Năm</div>
+          </div>
+          <div class="home4">
+            <div class="home-child1"></div>
+            <div class="top-thng">Top Ngày</div>
+          </div>
+          <div class="home5">
+            <div class="home-inner"></div>
+            <div class="top-nm">Top Tuần</div>
+          </div>
+          <div class="left23">
+            <div class="left-child42"></div>
+            <img
+              class="left-child43"
+              alt=""
+              src="/static/rectangle-4022@2x.png"
+            />
+
+            <div class="text22">
+              <div class="tuyt-th-c">Vạn Cổ Thần Vương</div>
+            </div>
+          </div>
+          <div class="left24">
+            <div class="left-child42"></div>
+            <img
+              class="left-child43"
+              alt=""
+              src="/static/rectangle-4023@2x.png"
+            />
+
+            <div class="text22">
+              <div class="tuyt-th-c">Tuyệt Thế Cổ Tôn</div>
+            </div>
+          </div>
+          <div class="left25">
+            <div class="left-child42"></div>
+            <img
+              class="left-child43"
+              alt=""
+              src="/static/rectangle-4024@2x.png"
+            />
+
+            <div class="text22">
+              <div class="tuyt-th-c">Tuyệt Thế Võ Thần</div>
+            </div>
+          </div>
+          <div class="top-bxh-item"></div>
+        </div>
+      </div>
+      <div class="footer1">
+        <div class="footer-inner"></div>
+        <div class="left26">
+          <a href="introduction.html">
+            <div class="logo5">
+              <img
+                class="logo-child2"
+                alt=""
+                src="/static/rectangle-11@2x.png"
+              />
+            </div>
+            <div class="comicbook5">
+              <span class="comicbook-txt4">
+                <span>Comic</span>
+                <span class="book4">Book</span>
+              </span>
+            </div>
+          </a>
+          <div class="copyright-20231">Copyright © 2023 ComicBook</div>
+          <div class="chnh-sch-bo1">Chính sách bảo mật</div>
+          <div class="lin-h-qung1">Liên hệ quảng cáo</div>
+        </div>
+        <div class="mid2">
+          <div class="location1">
+            <img
+              class="iconlycurvedlocation1"
+              alt=""
+              src="/static/iconlycurvedlocation1.svg"
+            />
+
+            <div class="ng-cng-qunh1">
+              Đường Cống Quỳnh, Phường Phạm Ngũ Lão, Quận 1, TP. Hồ Chí Minh
+            </div>
+          </div>
+          <div class="mail1">
+            <img class="vector-icon13" alt="" src="/static/vector12.svg" />
+
+            <img class="vector-icon14" alt="" src="/static/vector13.svg" />
+
+            <div class="comicbookvlugmailcom1">ComicBook.VLU@gmail.com</div>
+          </div>
+          <div class="phone1">
+            <div class="div7">09123456789</div>
+            <img
+              class="iconlycurvedcall1"
+              alt=""
+              src="/static/iconlycurvedcall1.svg"
+            />
+          </div>
+          <div class="contact1">Contact</div>
+        </div>
+        <div class="right1">
+          <div class="follow1">
+            <div class="follow-us1">Follow Us</div>
+            <img class="vector-icon15" alt="" src="/static/vector14.svg" />
+
+            <img class="vector-icon16" alt="" src="/static/vector15.svg" />
+
+            <img class="vector-icon17" alt="" src="/static/vector16.svg" />
+
+            <img class="vector-icon18" alt="" src="/static/vector17.svg" />
+          </div>
+          <div class="mi-thng-tin1">
+            Mọi thông tin và hình ảnh trên website đều được sưu tầm trên
+            Internet. Chúng tôi không sở hữu hay chịu trách nhiệm bất kỳ thông
+            tin nào trên web này. Nếu làm ảnh hưởng đến cá nhân hay tổ chức nào,
+            khi được yêu cầu, chúng tôi sẽ xem xét và gỡ bỏ ngay lập tức.
+          </div>
+          <img class="vector-icon19" alt="" src="/static/vector18.svg" />
+        </div>
+        <img class="line-icon" alt="" src="/static/line-1.svg" />
+      </div>
+    </div>
+  </body>
+</html>

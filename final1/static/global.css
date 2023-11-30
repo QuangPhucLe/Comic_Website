@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --body-14px-regular: Inter;
+    --font-quicksand: Quicksand;
+    --font-arial: Arial;
+    --heading-regular-heading-5-24: Rubik;
+    --body-16px-regular: Roboto;
+  
+    /* font sizes */
+    --font-size-lg: 18px;
+    --font-size-16xl: 35px;
+    --body-16px-regular-size: 16px;
+    --body-14px-regular-size: 14px;
+    --font-size-3xl: 22px;
+    --font-size-11xl: 30px;
+    --font-size-2xs: 11px;
+    --font-size-xs: 12px;
+    --font-size-smi: 13px;
+    --font-size-3xs: 10px;
+    --font-size-xl: 20px;
+    --font-size-8xs: 5px;
+    --font-size-5xs: 8px;
+    --heading-regular-heading-5-24-size: 24px;
+    --font-size-mini: 15px;
+    --font-size-lgi: 19px;
+    --heading-bold-heading-4-32-size: 32px;
+    --heading-bold-h1-72-size: 72px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --color-goldenrod-100: #d8a647;
+    --color-darkorange: #f18121;
+    --color-gray-100: #fbfbfb;
+    --color-gray-200: #8e8e8e;
+    --text-body: #808080;
+    --color-gray-300: #011c25;
+    --color-gray-400: rgba(0, 0, 0, 0.2);
+    --color-darkgray-100: #a7a7a7;
+    --color-darkgray-200: #999;
+    --color-whitesmoke-100: #f7f7f7;
+    --color-whitesmoke-200: #f2f2f2;
+    --color-gainsboro-100: #e2e2e2;
+    --color-gainsboro-200: #ddd;
+    --color-gainsboro-300: #dbdbdb;
+    --color-gainsboro-400: #d9d9d9;
+    --color-indianred-100: #dd6c6c;
+    --color-indianred-200: #b65f5f;
+    --color-yellowgreen-100: #8bc34a;
+    --color-crimson-100: #ff3860;
+    --color-darkorchid-100: #9c27b0;
+    --color-dimgray: #6a6a6a;
+    --color-darkslategray-100: #4a4a4a;
+    --color-darkslategray-200: #424242;
+    --color-darkslategray-300: #333;
+    --text-title: #1c3554;
+    --color-darkviolet: #bd10e0;
+    --color-steelblue-100: #5c97b8;
+    --color-steelblue-200: #3f94d5;
+    --color-steelblue-300: #428bca;
+    --color-steelblue-400: #4c8bae;
+    --color-steelblue-500: #357ebd;
+    --color-cornflowerblue: #2196f3;
+    --color-springgreen: #1af26e;
+    --color-darkcyan: #009688;
+    --color-skyblue-100: #56ccf2;
+    --color-skyblue-200: #5bc0de;
+    --color-mediumseagreen: #5cb85c;
+    --color-forestgreen: #4cae4c;
+    --color-lightgreen: #75c151;
+  
+    /* border radiuses */
+    --br-31xl: 50px;
+    --br-xl: 20px;
+    --br-3xs: 10px;
+    --br-11xl: 30px;
+    --br-10xs: 3px;
+    --br-27xl: 46px;
+    --br-8xs: 5px;
+    --br-131xl: 150px;
+    --br-9xs: 4px;
+    --br-7xs: 6px;
+  }
+  
